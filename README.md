@@ -92,7 +92,7 @@ Run the script from your terminal or command prompt, providing one or more Cours
 **Basic usage (using `config.ini` for URL and credentials, processing courses 133 and 134):**
 
 ```bash
-python moodle_downloader.py 133 134
+python get_course_results.py 133 134
 ```
 
 The script will create a sub-directory for each specified course (named after the course title, like `My Course Name` or `Course_ID_133` if the name can't be found) within the `results_base_dir`. Inside each course directory, it will save the downloaded `.xlsx` files for individual quizzes and the overall grades.
