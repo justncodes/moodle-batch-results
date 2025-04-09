@@ -1,0 +1,21 @@
+[Moodle]
+base_url = https://your.moodle.url.here.com
+username = your_moodle_username_here
+password = your_moodle_password_here
+
+# OPTIONAL CONFIGURATIONS BELOW
+[Paths]
+# Relative paths for Moodle endpoints. Defaults should usually work.
+login_path = /login/index.php
+course_view_path = /course/view.php
+grade_export_setup_path = /grade/export/xls/index.php
+grade_export_post_path = /grade/export/xls/export.php
+quiz_download_path = /mod/quiz/report.php
+# Base directory for saving results (relative to script location or absolute)
+results_base_dir = .
+
+[Settings]
+# Delay between requests in seconds in case of rate limits. No delay by default.
+request_delay_seconds = 0.0
+# SSL Verification (true/false). Set to false if using a cert that would fail to validate (such as sef-signed).
+verify_ssl = false
